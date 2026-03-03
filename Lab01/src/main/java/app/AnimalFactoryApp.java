@@ -1,10 +1,11 @@
-package app.factory;
+package app;
 
 import app.api.Animal;
+import app.factory.AnimalFactory;
 
 import static java.lang.IO.println;
 
-public class AnimalFactoryTest {
+public class AnimalFactoryApp {
     static void main(String[] args) {
         AnimalFactory factory = new AnimalFactory();
         Animal cat = factory.createAnimal("cat", "Persik", 9);
@@ -12,11 +13,11 @@ public class AnimalFactoryTest {
         Animal bird = factory.createAnimal("bird");
         Animal fish = factory.createAnimal("fish");
 
-        println("Имя собаки: " + dog.getName() + ", возраст: " + dog.getAge());
+        println("Имя собаки: " + dog.getName() + ", возраст: " + dog.getAge() + " года");
         dog.eat();
         dog.speak();
         println();
-        println("Имя кота: " + cat.getName() + ", возраст: " + cat.getAge());
+        println("Имя кота: " + cat.getName() + ", возраст: " + cat.getAge() + " лет");
         cat.eat();
         cat.speak();
         println();

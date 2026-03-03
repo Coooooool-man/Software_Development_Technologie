@@ -40,5 +40,6 @@ public class Bird implements Animal {
     public void setName(String name) {
         this.name = name;
     }
+
 }
 

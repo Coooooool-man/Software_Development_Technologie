@@ -1,21 +1,21 @@
-package app.factory;
+package app;
 
 import app.api.Door;
+import app.factory.DoorFactory;
 
 import static java.lang.IO.print;
 import static java.lang.IO.println;
 
-public class DoorFactoryTest {
+public class DoorFactoryApp {
     static void main(String[] args) {
         DoorFactory doorFactory = new DoorFactory();
         Door bathDoor = doorFactory.createDoor("bathroom", 12, 30);
         Door interiorDoor = doorFactory.createDoor("interior", 50, 100);
 
-        println("Длина и ширина двери санузел: ");
-        print(bathDoor.getLength() + " " + bathDoor.getWidth());
+        print(bathDoor);
         println();
-        println("Длина и ширина межкомнатной двери ");
-        print(interiorDoor.getLength() + " " + interiorDoor.getWidth());
+
+        print(interiorDoor);
         println();
 
         try {

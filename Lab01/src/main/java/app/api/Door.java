@@ -19,4 +19,9 @@ public abstract class Door {
     public void setLength(int length) {
         this.length = length;
     }
+
+    @Override
+    public String toString() {
+        return "Длина: " + this.getLength() + ", ширина: " + this.getWidth();
+    }
 }
